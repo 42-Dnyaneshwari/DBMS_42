@@ -1,0 +1,223 @@
+Cucentestulfent-Vert con-200-9612 5 Mongo Mongoce shell verston v3.6.8
+
+connecting to: nongodb://127.0.0.1:27017 Implicit session: session ("10": UUID("c46347fe-8018-4036-0da-0f63c48")]
+
+Mongoob server verston: 3.0.8 Server has startup warnings:
+
+student@student-venton-M200-HS1:-
+
+2023-05-22T14:42:27.639-0530 I STORACE [tattandlisten] 2023-05-22T14:42:27.639-0538 I STORACE O2023-05-22T14:42:27.639+0530 I STORAGE
+
+[inttanditsten] WARNING: Using the FS filesysten is strongly recommended with the wiredTiger storage engine (nitanditsten]
+
+**
+
+See http://dochub.nongodb.org/core/prodnotes-filesystem
+
+2023-05-22T14:42:37.480-0530 1 CONTROL 2023-05-22T14:42:37.480+0530 I CONTROL [inttandlisten] WARNING: Access control is not enabled for the database.
+
+(Initanditsten)
+
+2023-05-22T14:42:37.480+0530 I CONTROL (inttandlisten) ** 2023-05-22T14:42:37.480+0530 I CONTROL [inttandlisten]
+
+>show dbs;
+
+
+
+
+142 0.000GB
+
+As1 6.000GB
+
+Zipcode 0.00008
+
+adnin 0.00003
+
+config 0.000GB
+
+Local product 0.000GB
+
+rollno42 0.000
+
+sample 0.00068
+
+shweta 0.00008 
+
+stock 0.000GB
+
+test 0.000GB
+
+xyz 0.000GB
+
+> use sample;
+
+switched to db sample
+
+db.product.find().pretty(); 
+> db.product.find().pretty()
+
+> use emp
+
+switched to db emp 
+db.emp1.insert(
+
+... Nane:'ott,
+
+2023-05-22T15:21:18.949+0530 E QUERY [thread1] SyntaxError: unterminated string literal (shell):3:5
+
+> db.emp1.insert(( Name: 'Ott Price: 153, category:'Grocery"}) 
+2023-65-22715:22:36.204+0530 E QUERY [threads] SyntaxError: ntssing) after property list (shell):1:50
+
+> db.emp1.Insert(( Name: 'OIL,Price: 153,category: "Grocery'}) 
+WriteResult(( "inserted" : 1))
+
+db.emp1.insert((Name: 'Suger',Price:153,category:'Grocery'}} 
+WriteResult({ "inserted": 1 })
+
+db.emp1.Insert(( Name: 'White',Price: 153, category: 'Grocery'}} 
+WriteResult({ "inserted": 1 })
+
+
+db.enpi.insert(( Name: "OL1 Price: 153,category: "Crocery' }) WriteResult(( "nInserted" : 1))
+
+May 22 15:34
+
+student@student-Veriton-M200-HS1:
+
+> db.emp1.Insert(( Nane: 'Suger Price:153,category: Grocery')) 
+WriteResult(( "nInserted": 1 })
+
+> db.emp1.Insert(( Name: "white,Price: 153,category: "Grocery"}}
+ WriteResult(( "nInserted": 1})
+
+cb.emp1.Insert(( Nane: 'Good Price: 153, category: 'Crocery'}}
+ WriteResult(( "nInserted":1}) 
+
+> db.enpl.insert({ Name: 'rice Price: 153,category: Grocery') )
+writeResult({ "nInserted":1})
+
+db.emp1.Find().pretty()
+
+td: ObjectId("646b3b72154ed72c48a53320").
+
+"Name": "011", "Price": 153,
+
+"category": "Crocery"
+
+td": ObjectId("648b3b7c154ed72c48a53321"),
+
+"Name":"Suger",
+
+"Price" : 153, "category": "Crocery"
+
+td ObjectId("640b3b86154ed72c4053322"),
+
+"Name": "white", "Price": 153,
+
+"category": "Grocery"
+
+_id" : ObjectId("646b3b98154ed72c40a53323"),
+
+"Nane" : "Good", "Price": 153,
+
+"category": "Grocery"
+
+Ld": ObjectId("646b3ba4154ed72c4053324"),
+
+"Name": "rice", "Price" : 153,
+
+"category": "Grocery"
+
+db.emp1.update([Nane: '011'), (Price:234))
+
+WriteResult("Ratched" : 1, "nupserted" : 0, "Modified" : 1 })
+
+db.enpi.update([Name: 'Suger'), (Price:678))
+
+WriteResult("nmatched": 1, "nupserted": 0, "nModified": 1 })
+
+"_id": ObjectId("646b3ba4154ed72c48a53324").
+
+"Name": "rice",
+
+"Price": 153,
+
+}
+
+"category": "Grocery"
+
+db.enpi.update((Name: '011'), (Price:234)
+
+) WriteResult({ "nMatched": 1, "nupserted": 0, "nModified": 1}) 
+> db.emp1.update((Name: 'Suger'), (Price:678))
+
+WriteResult(( "nMatched": 1, "nupserted": 0, "nModified": 1})
+
+> db.enp1.update((Nane: "White'), (Price:9764)) 
+WriteResult(( "nMatched": 1, "nupserted": 0, "Modified" : 1))
+
+ > db.enpi.update([Name: 'Good'), (Price:97438))
+WriteResult(( "natched": 1, "nupserted" : 0, "Modified": 1 }) 
+
+> db.enpi.update((Name: 'rice'), (Price:99))
+ WriteResult(( "natched" : 1, "nupserted": 0, "Modified" : 1 })
+
+> db.empi.find().pretty()
+
+{"_id": ObjectId("646b3b72154ed72c40a53320"), "Price" : 234)
+
+id": ObjectId("646b3b7c154ed72c40a53321"), "Price" : 678]
+
+td : ObjectId("646b3b86154ed72c46a53322"), "Price": 9764) 
+id": ObjectId("646b3b98154ed72c40a53323"), "Price" : 97438)
+
+td": ObjectId("646b3ba4154ed72c48a53324"), "Price":99) 
+db.enpi.find().pretty()
+
+_id": ObjectId("646b3b72154ed72c48a53320"), "Price" : 234)
+
+id": ObjectId("646b3b7c154ed72c40a53321"),"Price" 678}
+
+td": ObjectId("646b3b86154ed72c48a53322"), "Price" : 9764)
+
+td": ObjectId("646b3b98154ed72c40a53323"), "Price": 97438)
+
+1d": ObjectId("646b3ba4154ed72c40a53324"), "Price" : 99 }
+
+
+db.movie.insert((mid: 1,mname: (first: "KGF", last:"2"},mprice:500}); WriteResult({ "nInserted" 1 })
+
+> db.movie.find();
+
+(id: ObjectId("646b38dc749c836880617d0b"), "mid": 1, "name": { "first" : "KGF", "last" : "2" }, "price": 500)
+
+> db.movie.find((mprice:500"}); 2023-05-22T15:13:57.253+0530 E QUERY [thread1] SyntaxError: unterminated string literal (shell):1:25
+
+> db.movie.find({mprice:500")).pretty();
+
+2023-05-22T15:14:13.421+0530 E QUERY [thread1] SyntaxError: unterminated string literal (shell):1:25
+
+> db.movie.find((mprice:500)).pretty();
+
+id: ObjectId("646b38dc749c836880617d0b"), "mid": 1,
+
+"name": {
+
+"first": "KGR
+
+"Last": "2"
+
+). "price":500
+
+db.movie.ensureIndex({mid:1});
+
+"createdCollectionAutomatically" : false, "numIndexesBefore": 1, "numIndexesAfter": 2,
+
+"ok": 1
+
+db.movie.ensureIndex({(mid:-1)); "createdCollectionAutomatically" : false, "numIndexesBefore": 2,
+
+"numIndexesAfter": 3,
+
+"ok": 1
+
